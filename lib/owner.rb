@@ -53,5 +53,15 @@ def feed_cats
   Cat.all.map {|cat| cat.mood = "happy"}
   end 
   
+   def sell_pets
+    Cat.all.map {|cat| cat.mood = "nervous"}
+
+    Dog.all.map {|dog| dog.mood = "nervous"}
+   
+  end
+  
+  def list_pets
+    ""
+end 
   
 end
