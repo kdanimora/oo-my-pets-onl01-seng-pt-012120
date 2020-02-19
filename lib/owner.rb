@@ -13,7 +13,7 @@ end
 def species(name="human")
   @name = name 
 end 
-
+binding.pry
 def say_species
   "I am a #{self.species}."
 end 
