@@ -9,7 +9,7 @@ def initilize(name, owner, mood="nervous")
   @name = name
   @owner = owner
   @mood = mood
-  #@@all.push(self)
+  @@all.push(self)
 end 
   
   # code goes here
