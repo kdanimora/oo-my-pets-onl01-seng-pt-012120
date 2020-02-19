@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class Owner
   
@@ -35,6 +35,6 @@ def cats
   Cat.all.select {|cat| cat.owner == self} 
 end 
 
-binding.pry 
+
 
 end
