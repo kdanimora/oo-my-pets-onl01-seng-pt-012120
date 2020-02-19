@@ -55,13 +55,13 @@ def feed_cats
   
    def sell_pets
     Cat.all.map {|cat| cat.mood = "nervous"}
-    Cat.all.map {|cat| cat.mood = nil}
+    Cat.all.map {|cat| cat.owner = nil}
     Dog.all.map {|dog| dog.mood = "nervous"}
-    Dog.all.map {|dog| dog.mood = nil}
+    Dog.all.map {|dog| dog.owner = nil}
   end
   
   def list_pets
-    "I have #{@owner.dogs.count}dog(s), and #{@owner.cats.count} cat(s)."
+    "I have #{self.dogs.count}dog(s), and #{self.cats.count} cat(s)."
 end 
   
 end
