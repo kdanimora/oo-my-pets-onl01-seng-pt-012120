@@ -44,6 +44,14 @@ def buy_dog(name)
 new_dog = Dog.new(name, self)
 end 
 
+def walk_dogs
+    Dog.all.map {|dog| dog.mood = "happy"}
+end 
 
 
+def feed_cats
+  Cat.all.map {|cat| cat.mood = "happy"}
+  end 
+  
+  
 end
