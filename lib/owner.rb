@@ -55,9 +55,9 @@ def feed_cats
   
    def sell_pets
     Cat.all.map {|cat| cat.mood = "nervous"}
-
+    Cat.all.map {|cat| cat.mood = nil}
     Dog.all.map {|dog| dog.mood = "nervous"}
-   
+    Dog.all.map {|dog| dog.mood = nil}
   end
   
   def list_pets
