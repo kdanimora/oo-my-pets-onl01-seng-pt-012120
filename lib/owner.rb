@@ -25,8 +25,9 @@ def self.count
 end 
 
 def self.reset_all
-  @all = []
+  @@all = []
 end 
+
 
 def cats
   Cat.all.select {cat} cat.owner == self}
