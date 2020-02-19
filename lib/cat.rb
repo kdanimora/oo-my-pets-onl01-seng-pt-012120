@@ -12,11 +12,12 @@ def initilize(name, owner, mood="nervous")
   @owner = owner
   @mood = mood
   @@all.push(self)
+  binding.pry
 end 
   
   def self.all
     @@all
   end 
-  binding.pry
+  
   # code goes here
 end
