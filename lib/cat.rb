@@ -1,10 +1,9 @@
-require 'pry'
+
 
 class Cat
   attr_accessor :owner, :mood
   attr_reader :name
 
-binding.pry
 @@all = []
 
 def initilize(name, owner, mood="nervous")
