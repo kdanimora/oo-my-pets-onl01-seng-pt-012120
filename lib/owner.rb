@@ -1,15 +1,15 @@
 class Owner
   # code goes here
+  attr_accessor :name 
   
    @@all = []
-   
-  def initialize(name)
+   def initialize(name)
     @name = name 
-    @@all.push.self
+    @@all.push(self)
 end 
 
 def species(name="human")
-  name = name 
+  @name = name 
 end 
 
 def say_species
