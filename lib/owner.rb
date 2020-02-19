@@ -10,7 +10,7 @@ class Owner
     @@all.push(self)
 end 
 
-def species(name="human")
+def species (name="human")
   @name = name 
 end 
 binding.pry
