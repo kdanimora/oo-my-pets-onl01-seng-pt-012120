@@ -60,8 +60,8 @@ def feed_cats
     Dog.all.map {|dog| dog.owner = nil}
   end
   
-  def list_pets
-    "I have #{self.dogs.count}dog(s), and #{self.cats.count} cat(s)."
-end 
+ def list_pets
+    "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+  end 
   
 end
