@@ -1,11 +1,9 @@
-
-
 class Owner
   
   attr_reader :name 
   
    @@all = []
-   def initialize(name)
+def initialize(name)
     @name = name 
     @@all.push(self)
 end 
@@ -30,11 +28,8 @@ def self.reset_all
   @@all = []
 end 
 
-
 def cats
   Cat.all.select {|cat| cat.owner == self} 
 end 
-
-
 
 end
