@@ -1,18 +1,19 @@
 class Owner
   # code goes here
-  attr_accessor :name 
-  
+  attr_reader :name 
+   @@all = []
+   
   def initialize(name)
     @name = name 
-    @species = species
+    @@all.push.self
 end 
 
-def name 
-  @name 
+def species(name="human")
+  name = name 
 end 
 
-def species
-  @species
+def say_species
+  "I am a #{self.species}."
 end 
 
 
